@@ -5,7 +5,7 @@
  * Plugin URI:  http://demo.shrimpthemes.com/1/megamenu/
  * Author:      HasThemes
  * Author URI:  http://hasthemes.com/
- * Version:     1.2.2
+ * Version:     1.2.4
  * License:     GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: htmega-menu
@@ -13,7 +13,7 @@
 */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-define( 'HTMEGA_MENU_VERSION', '1.2.2' );
+define( 'HTMEGA_MENU_VERSION', '1.2.4' );
 define( 'HTMEGA_MENU_PL_ROOT', __FILE__ );
 define( 'HTMEGA_MENU_PL_URL', plugins_url( '/', HTMEGA_MENU_PL_ROOT ) );
 define( 'HTMEGA_MENU_PL_PATH', plugin_dir_path( HTMEGA_MENU_PL_ROOT ) );

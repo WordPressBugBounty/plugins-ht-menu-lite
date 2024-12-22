@@ -2,8 +2,8 @@
 Contributors: hasthemes, htplugins, devitemsllc
 Tags: Mega menu, Elementor, Menu, Widget, Megamenu
 Requires at least: 5.0
-Tested up to: 6.6
-Stable tag: 1.2.3
+Tested up to: 6.7
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ It has option to add individual menu widthand sub menu position.
 
 In the pro verion, it has option to add menu icon, badge and predefined 10 Menu Layouts. It will save time to develop mega menu for your website. 
 
-[Check the live demo](http://demo.shrimpthemes.com/1/megamenu/)
+[Check the live demo](https://theplugindemo.com/megamenu/)
 
 [youtube https://youtu.be/oAND7tZFidI]
 
@@ -68,6 +68,12 @@ Needs assistance to use this plugin?
 Feel free to [Contact us](https://hasthemes.com/contact-us/)
 
 == Changelog ==
+
+= Version: 1.2.4 - Date: 2024-12-22 =
+* Fixed: PHP critical error issue.
+* Fixed: A few minor issues.
+* Tested: Compatibility with the latest version of WordPress.
+* Tested: Compatibility with the latest version of Elementor.
 
 = Version: 1.2.3 - Date: 2023-07-20 =
 * Fixed: Template Library Image Loading Issue.

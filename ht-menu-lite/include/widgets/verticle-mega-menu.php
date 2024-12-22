@@ -2,9 +2,6 @@
 namespace Elementor;
 
 // Elementor Classes
-use Elementor\Core\Schemes\Color as Scheme_Color;
-use Elementor\Core\Schemes\Typography as Scheme_Typography;
-
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 class HTMega_Menu_Verticle_Menu extends Widget_Base {
@@ -399,7 +396,6 @@ class HTMega_Menu_Verticle_Menu extends Widget_Base {
                         Group_Control_Typography::get_type(),
                         array(
                             'name'     => 'main_menu_items_typography',
-                            'scheme'   => Scheme_Typography::TYPOGRAPHY_4,
                             'selector' => '{{WRAPPER}}  .htmega-verticle-menu ul > li > a',
                         )
                     );

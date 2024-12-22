@@ -6,6 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 class HTMega_Menu_Elementor {
 
     private static $_instance = null;
+    private $mode = '';
     public static function instance() {
         if ( is_null( self::$_instance ) ) {
             self::$_instance = new self();
