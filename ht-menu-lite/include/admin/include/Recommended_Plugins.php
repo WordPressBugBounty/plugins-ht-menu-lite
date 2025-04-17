@@ -66,7 +66,6 @@ class Recommended_Plugins {
         // Initialize properties
         $this->text_domain       =  !empty( $args['text_domain'] ) ? $args['text_domain'] : 'htrp';
         $this->parent_menu_slug  =  !empty( $args['parent_menu_slug'] ) ? $args['parent_menu_slug'] : 'plugins.php';
-        $this->menu_label        =  !empty( $args['menu_label'] ) ? $args['menu_label'] : esc_html__( 'Recommendations', $this->text_domain );
         $this->menu_capability   =  !empty( $args['menu_capability'] ) ? $args['menu_capability'] : 'manage_options';
         $this->menu_page_slug    =  !empty( $args['menu_page_slug'] ) ? $args['menu_page_slug'] : $this->text_domain . '_extensions';
         $this->priority          =  !empty( $args['priority'] ) ? $args['priority'] : 100;
@@ -74,13 +73,21 @@ class Recommended_Plugins {
         $this->assets_url        =  !empty( $args['assets_url'] ) ? $args['assets_url'] : plugins_url( '', __FILE__ );
         $this->tab_list          =  !empty( $args['tab_list'] ) ? $args['assets_url'] : [];
 
-        
+        // Initialize translatable text on init hook
+        add_action( 'init', [ $this, 'init_translatable_text' ] );
         add_action( 'admin_menu', [ $this, 'admin_menu' ], $this->priority );
         add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_assets' ] );
 
         // Ajax Action
         add_action( 'wp_ajax_'.$this->text_domain.'_ajax_plugin_activation', [ $this, 'plugin_activation' ] );
 
+    }
+
+    /**
+     * Initialize translatable text
+     */
+    public function init_translatable_text() {
+        $this->menu_label = !empty( $this->args['menu_label'] ) ? $this->args['menu_label'] : esc_html__( 'Recommendations', 'htmega-menu' );
     }
 
     /**
@@ -124,11 +131,11 @@ class Recommended_Plugins {
         $localize_vars['text_domain'] = sanitize_title_with_dashes( $this->text_domain );
         $localize_vars['nonce'] = wp_create_nonce('htrp_nonce');
         $localize_vars['buttontxt'] = array(
-            'buynow'     => esc_html__( 'Buy Now', $this->text_domain ),
-            'preview'    => esc_html__( 'Preview', $this->text_domain ),
-            'installing' => esc_html__( 'Installing..', $this->text_domain ),
-            'activating' => esc_html__( 'Activating..', $this->text_domain ),
-            'active'     => esc_html__( 'Activated', $this->text_domain ),
+            'buynow'     => esc_html__( 'Buy Now', 'htmega-menu' ),
+            'preview'    => esc_html__( 'Preview', 'htmega-menu' ),
+            'installing' => esc_html__( 'Installing..', 'htmega-menu' ),
+            'activating' => esc_html__( 'Activating..', 'htmega-menu' ),
+            'active'     => esc_html__( 'Activated', 'htmega-menu' ),
         );
         wp_localize_script( 'htrp-plugin-install-manager', 'htrp_params', $localize_vars );
 
@@ -229,10 +236,10 @@ class Recommended_Plugins {
                                     $plugins_type = 'pro';
                                     $image_url     = $this->plugin_icon( $plugins_type, $plugin['slug'] );
                                     $description    = $plugin['description'];
-                                    $author_name    = esc_html__( 'HasTheme', $this->text_domain );
+                                    $author_name    = esc_html__( 'HasTheme', 'htmega-menu' );
                                     $author_link    = $plugin['author_link'];
                                     $details_link   = $plugin['link'];
-                                    $button_text    = esc_html__('Buy Now', $this->text_domain );
+                                    $button_text    = esc_html__('Buy Now', 'htmega-menu' );
                                     $button_classes = 'button button-primary';
                                     $target         = '_blank';
                                     $modal_class    = '';
@@ -244,18 +251,18 @@ class Recommended_Plugins {
                                     if ( file_exists( WP_PLUGIN_DIR . '/' . $data['location'] ) && is_plugin_inactive( $data['location'] ) ) {
 
                                         $button_classes = 'button htrp-activate-now button-primary';
-                                        $button_text    = esc_html__( 'Activate', $this->text_domain );
+                                        $button_text    = esc_html__( 'Activate', 'htmega-menu' );
 
                                     // Not Installed.
                                     } elseif ( ! file_exists( WP_PLUGIN_DIR . '/' . $data['location'] ) ) {
 
                                         $button_classes = 'button htrp-install-now';
-                                        $button_text    = esc_html__( 'Install Now', $this->text_domain );
+                                        $button_text    = esc_html__( 'Install Now', 'htmega-menu' );
 
                                     // Active.
                                     } else {
                                         $button_classes = 'button disabled';
-                                        $button_text    = esc_html__( 'Activated', $this->text_domain );
+                                        $button_text    = esc_html__( 'Activated', 'htmega-menu' );
                                     }
 
                                     ?>
@@ -272,7 +279,7 @@ class Recommended_Plugins {
                                             <div class="desc column-description" style="margin-right: 0;">
                                                 <p><?php echo wp_trim_words( $description, 23, '....'); ?></p>
                                                 <p class="authors">
-                                                    <cite><?php echo esc_html__( 'By ', $this->text_domain ); ?>
+                                                    <cite><?php echo esc_html__( 'By ', 'htmega-menu' ); ?>
                                                         <?php if( $plugins_type == 'free' ): ?>
                                                             <?php echo $author_name; ?>
                                                         <?php else: ?>
@@ -286,7 +293,7 @@ class Recommended_Plugins {
                                             <div class="column-updated">
                                                 <?php
                                                     if (! file_exists( WP_PLUGIN_DIR . '/' . $data['location'] ) && $plugins_type == 'pro' ) {
-                                                        echo '<a class="button button-primary" href="'.esc_url( $details_link ).'" target="'.esc_attr( $target ).'">'.esc_html__( 'Buy Now', $this->text_domain ).'</a>';
+                                                        echo '<a class="button button-primary" href="'.esc_url( $details_link ).'" target="'.esc_attr( $target ).'">'.esc_html__( 'Buy Now', 'htmega-menu' ).'</a>';
                                                     }else{
                                                 ?>
                                                     <button class="<?php echo $button_classes; ?>" data-pluginopt='<?php echo wp_json_encode( $data ); ?>'><?php echo $button_text; ?></button>
@@ -294,7 +301,7 @@ class Recommended_Plugins {
                                                 <?php } ?>
                                             </div>
                                             <div class="column-downloaded">
-                                                <a href="<?php echo esc_url( $details_link ) ?>" target="<?php echo esc_attr( $target ) ?>" <?php echo $modal_class; ?>><?php echo esc_html__('More Details', $this->text_domain) ?></a>
+                                                <a href="<?php echo esc_url( $details_link ) ?>" target="<?php echo esc_attr( $target ) ?>" <?php echo $modal_class; ?>><?php echo esc_html__('More Details', 'htmega-menu') ?></a>
                                                 <span class="downloaded-count">
                                                     <?php
                                                         if( $plugins_type == 'free' ){
@@ -397,7 +404,7 @@ class Recommended_Plugins {
             wp_send_json_error(
                 array(
                     'success' => false,
-                    'message' => esc_html__( 'Plugin Not Found', $this->text_domain ),
+                    'message' => esc_html__( 'Plugin Not Found', 'htmega-menu' ),
                 )
             );
         }
@@ -417,7 +424,7 @@ class Recommended_Plugins {
         wp_send_json_success(
             array(
                 'success' => true,
-                'message' => esc_html__( 'Plugin Successfully Activated', $this->text_domain ),
+                'message' => esc_html__( 'Plugin Successfully Activated', 'htmega-menu' ),
             )
         );
 

@@ -1,0 +1,479 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: HT Menu Lite – WordPress Mega Menu Builder for "
+"Elementor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-17 04:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.2; wp-6.8\n"
+"X-Domain: htmega-menu"
+
+#: include/admin/include/templates_list.php:59
+msgid " has been imported."
+msgstr ""
+
+#: include/admin/include/templates_list.php:36
+msgid " Templates"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:547
+msgid "10 Menu Layouts"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:532
+msgid "5 Menu Layouts"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:254
+msgid "Activate"
+msgstr ""
+
+#: include/class.mega-menu.php:114
+msgid "Activate Now"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:138
+#: include/admin/include/Recommended_Plugins.php:265
+msgid "Activated"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:137
+msgid "Activating.."
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:161
+#: include/widgets/verticle-mega-menu.php:160
+msgid "Alignment"
+msgstr ""
+
+#: include/admin/include/templates_list.php:46
+msgid "Back to Library"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:143
+#: include/widgets/inline-mega-menu.php:263
+#: include/widgets/inline-mega-menu.php:393
+#: include/widgets/inline-mega-menu.php:451
+#: include/widgets/inline-mega-menu.php:516
+#: include/widgets/verticle-mega-menu.php:142
+#: include/widgets/verticle-mega-menu.php:262
+#: include/widgets/verticle-mega-menu.php:349
+#: include/widgets/verticle-mega-menu.php:407
+#: include/widgets/verticle-mega-menu.php:460
+msgid "Border"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:130
+#: include/widgets/inline-mega-menu.php:250
+#: include/widgets/inline-mega-menu.php:380
+#: include/widgets/verticle-mega-menu.php:129
+#: include/widgets/verticle-mega-menu.php:249
+#: include/widgets/verticle-mega-menu.php:336
+msgid "Border Radius"
+msgstr ""
+
+#: include/admin/include/templates_list.php:38
+msgid "Buy HT Menu Pro Version"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:554
+#: include/admin/include/Recommended_Plugins.php:134
+#: include/admin/include/Recommended_Plugins.php:242
+#: include/admin/include/Recommended_Plugins.php:296
+#: include/admin/include/templates_list.php:73
+msgid "Buy Now"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:282
+msgid "By "
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:169
+#: include/widgets/verticle-mega-menu.php:168
+msgid "Center"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:517
+msgid "Contact Us"
+msgstr ""
+
+#: include/admin/include/templates_list.php:16
+msgid "Create a new page from this template"
+msgstr ""
+
+#: include/helper-function.php:34
+msgid "Do not Saved Templates."
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:48
+#: include/widgets/verticle-mega-menu.php:47
+msgid "Dropdown Icon"
+msgstr ""
+
+#: include/class.mega-menu.php:199
+msgid "Enable megamenu?"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:386
+msgid "General"
+msgstr ""
+
+#: include/class.mega-menu.php:381
+msgid "Go Premium"
+msgstr ""
+
+#: include/class.mega-menu.php:145
+msgid "Go Pro"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:239
+msgid "HasTheme"
+msgstr ""
+
+#. Author of the plugin
+msgid "HasThemes"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:495
+#: include/widgets/verticle-mega-menu.php:439
+msgid "Hover"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:311
+msgid "Hover Color"
+msgstr ""
+
+#: include/class.mega-menu.php:113
+msgid ""
+"HT Mega Menu not Working because you need to activate the Elementor plugin."
+msgstr ""
+
+#: include/class.mega-menu.php:121
+msgid ""
+"HT Mega Menu not Working because you need to install the Elementor plugin."
+msgstr ""
+
+#: include/admin/include/templates_list.php:32
+msgid "HT Mega Menu Templates Library"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:32
+#: include/admin/include/admin-setting.php:33
+msgid "HT Menu"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"HT Menu for Elementor Page Builder. You can create easily any layout use "
+"this plugins."
+msgstr ""
+
+#: include/admin/include/admin-setting.php:527
+msgid "HT Menu Free"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:523
+msgid "HT Menu Free VS HT Menu Pro."
+msgstr ""
+
+#. Name of the plugin
+msgid "HT Menu Lite – WordPress Mega Menu Builder for Elementor"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:542
+msgid "HT Menu Pro"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:482
+msgid "HT Menu Settings"
+msgstr ""
+
+#: include/helper-function.php:14
+msgid "HTMega Menu"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://demo.shrimpthemes.com/1/megamenu/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://hasthemes.com/"
+msgstr ""
+
+#: include/admin/include/templates_list.php:77
+msgid "Import"
+msgstr ""
+
+#: include/admin/include/templates_list.php:13
+msgid "Import template to your Library"
+msgstr ""
+
+#: include/admin/include/templates_list.php:60
+msgid "Import to Library"
+msgstr ""
+
+#: include/admin/include/templates_list.php:61
+msgid "Import to Page"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:530
+#: include/admin/include/admin-setting.php:545
+msgid "Individual Menu Width Control Option"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:15
+msgid "Inline Mega Menu"
+msgstr ""
+
+#: include/class.mega-menu.php:123 include/admin/include/admin-setting.php:539
+#: include/admin/include/Recommended_Plugins.php:260
+msgid "Install Now"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:136
+msgid "Installing.."
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:279
+msgid "Item Padding"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:165
+#: include/widgets/verticle-mega-menu.php:164
+msgid "Left"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:62
+#: include/widgets/verticle-mega-menu.php:61
+msgid "Main Menu"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:412
+#: include/widgets/verticle-mega-menu.php:368
+msgid "Main Menu Items"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:70
+#: include/widgets/verticle-mega-menu.php:69
+msgid "Main Menu Width"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:106
+#: include/widgets/verticle-mega-menu.php:105
+msgid "Margin"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:325
+#: include/widgets/verticle-mega-menu.php:281
+msgid "Mega Menu"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:466
+msgid "Mega Menu Background Color"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:332
+#: include/widgets/verticle-mega-menu.php:288
+#: include/admin/include/admin-setting.php:455
+msgid "Mega Menu Width"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:31
+#: include/widgets/verticle-mega-menu.php:30
+msgid "Menu"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:535
+#: include/admin/include/admin-setting.php:550
+msgid "Menu Badge"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:537
+#: include/admin/include/admin-setting.php:552
+msgid "Menu Badge Background Color"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:536
+#: include/admin/include/admin-setting.php:551
+msgid "Menu Badge Color"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:416
+msgid "Menu Hover & Active Color"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:534
+#: include/admin/include/admin-setting.php:549
+msgid "Menu Icon Color"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:533
+#: include/admin/include/admin-setting.php:548
+msgid "Menu Icon Picker"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:409
+msgid "Menu Items Color"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:529
+#: include/admin/include/admin-setting.php:544
+msgid "Menu Template Option"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:304
+msgid "More Details"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:423
+#: include/widgets/verticle-mega-menu.php:379
+msgid "Normal"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:512
+msgid "Online Documentation"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:118
+#: include/widgets/inline-mega-menu.php:238
+#: include/widgets/inline-mega-menu.php:368
+#: include/widgets/inline-mega-menu.php:480
+#: include/widgets/verticle-mega-menu.php:117
+#: include/widgets/verticle-mega-menu.php:237
+#: include/widgets/verticle-mega-menu.php:324
+msgid "Padding"
+msgstr ""
+
+#: include/admin/include/templates_list.php:17
+msgctxt "placeholder"
+msgid "Enter a Page Name"
+msgstr ""
+
+#: include/class.mega-menu.php:130
+msgid "Please deactivate HT Menu Lite before activating HT Menu."
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:407
+msgid "Plugin Not Found"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:427
+msgid "Plugin Successfully Activated"
+msgstr ""
+
+#: include/class.mega-menu.php:386
+msgid "premium version"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:135
+#: include/admin/include/templates_list.php:80
+msgid "Preview"
+msgstr ""
+
+#: include/admin/include/templates_list.php:84
+msgid "Pro"
+msgstr ""
+
+#: include/class.mega-menu.php:386
+msgid "Purchase our"
+msgstr ""
+
+#: include/admin/include/Recommended_Plugins.php:90
+msgid "Recommendations"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:173
+#: include/widgets/verticle-mega-menu.php:172
+msgid "Right"
+msgstr ""
+
+#: include/class.mega-menu.php:203
+msgid "Save"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:38
+#: include/widgets/verticle-mega-menu.php:37
+msgid "Select Menu"
+msgstr ""
+
+#: include/helper-function.php:36
+msgid "Select Template"
+msgstr ""
+
+#: include/class.mega-menu.php:143
+msgid "Settings"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:391
+msgid "Style"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:194
+#: include/widgets/verticle-mega-menu.php:193
+msgid "Sub Menu"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:434
+msgid "Sub Menu Background Color"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:441
+msgid "Sub Menu Items Color"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:448
+msgid "Sub Menu Items Hover Color"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:531
+#: include/admin/include/admin-setting.php:546
+msgid "Sub Menu Position"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:202
+#: include/widgets/verticle-mega-menu.php:201
+#: include/admin/include/admin-setting.php:423
+msgid "Sub Menu Width"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:492
+msgid "Successfully Settings Saved."
+msgstr ""
+
+#: include/admin/include/template-library.php:149
+msgid "Templates in this package"
+msgstr ""
+
+#: include/admin/include/template-library.php:52
+#: include/admin/include/template-library.php:53
+msgid "Templates Library"
+msgstr ""
+
+#: include/widgets/inline-mega-menu.php:291
+#: include/widgets/inline-mega-menu.php:430
+#: include/widgets/inline-mega-menu.php:502
+#: include/widgets/verticle-mega-menu.php:386
+#: include/widgets/verticle-mega-menu.php:446
+msgid "Text Color"
+msgstr ""
+
+#: include/class.mega-menu.php:386
+msgid "to unlock these pro options!"
+msgstr ""
+
+#: include/widgets/verticle-mega-menu.php:14
+msgid "Vertical Mega Menu"
+msgstr ""
+
+#: include/admin/include/admin-setting.php:507
+msgid "Video Tutorial"
+msgstr ""
