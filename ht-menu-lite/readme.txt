@@ -1,9 +1,9 @@
 === HT Menu - WordPress Mega Menu Builder for Elementor ===
-Contributors: hasthemes, htplugins, devitemsllc, tarekht, zenaulislam, aslamhasib, madhusudandev
+Contributors: hasthemes, htplugins, devitemsllc, zenaulislam, aslamhasib, madhusudandev
 Tags: Mega menu, Elementor, Menu, Widget, Megamenu
 Requires at least: 5.0
-Tested up to: 6.8
-Stable tag: 1.2.5
+Tested up to: 7.0
+Stable tag: 1.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,14 @@ Needs assistance to use this plugin?
 Feel free to [Contact us](https://hasthemes.com/contact-us/)
 
 == Changelog ==
+
+= Version: 1.2.6 - Date: 2026-07-14 =
+* Security: Added capability check and input/output sanitization to the menu settings AJAX handler and menu render output, preventing a stored XSS reported by Artus KG.
+* Fixed: Incorrect text domain used across menu builder strings.
+* Fixed: Elementor Atomic widget styles not loading when used inside a Mega Menu template.
+* Fixed: Menu dropdown arrows and Font Awesome icons inside Mega Menu templates not displaying.
+* Tested: Compatibility with the latest version of WordPress.
+* Tested: Compatibility with the latest version of Elementor.
 
 = Version: 1.2.5 - Date: 2025-04-17 =
 * Added: Language translation file.

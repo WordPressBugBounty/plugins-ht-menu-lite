@@ -297,7 +297,9 @@
 .htmobile-menu-wrap .htmegamenu-content-wrapper .elementor-widget-container ul.menu{
     display: block !important;
 }
-
+.htmegamenu-content-wrapper .elementor-widget .elementor-icon-list-icon{
+  display: inline-flex;
+}
 
 /* Verticle Mega Menu */
 .htmega-verticle-menu{

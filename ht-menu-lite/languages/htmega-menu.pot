@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: HT Menu Lite – WordPress Mega Menu Builder for "
 "Elementor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-17 04:55+0000\n"
+"POT-Creation-Date: 2026-07-14 08:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.7.2; wp-6.8\n"
+"X-Loco-Version: 2.8.7; wp-7.0.1; php-8.4.18\n"
 "X-Domain: htmega-menu"
 
 #: include/admin/include/templates_list.php:59
@@ -23,6 +23,16 @@ msgstr ""
 
 #: include/admin/include/templates_list.php:36
 msgid " Templates"
+msgstr ""
+
+#: include/menu/templates.php:107 include/menu/templates.php:115
+#: include/menu/templates.php:129 include/menu/templates.php:144
+#: include/menu/templates.php:180
+msgid "( Pro )"
+msgstr ""
+
+#: include/menu/templates.php:136
+msgid "(Pro)"
 msgstr ""
 
 #: include/admin/include/admin-setting.php:547
@@ -50,34 +60,54 @@ msgstr ""
 msgid "Activating.."
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:161
 #: include/widgets/verticle-mega-menu.php:160
+#: include/widgets/inline-mega-menu.php:161
 msgid "Alignment"
+msgstr ""
+
+#: include/class.mega-menu.php:372 include/menu/templates.php:194
+msgid "All Data Saved"
 msgstr ""
 
 #: include/admin/include/templates_list.php:46
 msgid "Back to Library"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:143
-#: include/widgets/inline-mega-menu.php:263
-#: include/widgets/inline-mega-menu.php:393
-#: include/widgets/inline-mega-menu.php:451
-#: include/widgets/inline-mega-menu.php:516
+#: include/menu/templates.php:143
+msgid "Background"
+msgstr ""
+
+#: include/menu/templates.php:179
+msgid "Background Color"
+msgstr ""
+
+#: include/menu/templates.php:185
+msgid "Background Second Color"
+msgstr ""
+
+#: include/menu/templates.php:50
+msgid "Badges"
+msgstr ""
+
 #: include/widgets/verticle-mega-menu.php:142
 #: include/widgets/verticle-mega-menu.php:262
 #: include/widgets/verticle-mega-menu.php:349
 #: include/widgets/verticle-mega-menu.php:407
 #: include/widgets/verticle-mega-menu.php:460
+#: include/widgets/inline-mega-menu.php:143
+#: include/widgets/inline-mega-menu.php:263
+#: include/widgets/inline-mega-menu.php:393
+#: include/widgets/inline-mega-menu.php:451
+#: include/widgets/inline-mega-menu.php:516
 msgid "Border"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:130
-#: include/widgets/inline-mega-menu.php:250
-#: include/widgets/inline-mega-menu.php:380
 #: include/widgets/verticle-mega-menu.php:129
 #: include/widgets/verticle-mega-menu.php:249
 #: include/widgets/verticle-mega-menu.php:336
+#: include/widgets/inline-mega-menu.php:130
+#: include/widgets/inline-mega-menu.php:250
+#: include/widgets/inline-mega-menu.php:380
 msgid "Border Radius"
 msgstr ""
 
@@ -85,10 +115,10 @@ msgstr ""
 msgid "Buy HT Menu Pro Version"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:554
 #: include/admin/include/Recommended_Plugins.php:134
 #: include/admin/include/Recommended_Plugins.php:242
 #: include/admin/include/Recommended_Plugins.php:296
+#: include/admin/include/admin-setting.php:554
 #: include/admin/include/templates_list.php:73
 msgid "Buy Now"
 msgstr ""
@@ -97,13 +127,21 @@ msgstr ""
 msgid "By "
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:169
 #: include/widgets/verticle-mega-menu.php:168
+#: include/widgets/inline-mega-menu.php:169
 msgid "Center"
+msgstr ""
+
+#: include/menu/templates.php:114 include/menu/templates.php:135
+msgid "Color"
 msgstr ""
 
 #: include/admin/include/admin-setting.php:517
 msgid "Contact Us"
+msgstr ""
+
+#: include/menu/templates.php:43
+msgid "Content"
 msgstr ""
 
 #: include/admin/include/templates_list.php:16
@@ -114,8 +152,8 @@ msgstr ""
 msgid "Do not Saved Templates."
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:48
 #: include/widgets/verticle-mega-menu.php:47
+#: include/widgets/inline-mega-menu.php:48
 msgid "Dropdown Icon"
 msgstr ""
 
@@ -127,7 +165,7 @@ msgstr ""
 msgid "General"
 msgstr ""
 
-#: include/class.mega-menu.php:381
+#: include/class.mega-menu.php:418
 msgid "Go Premium"
 msgstr ""
 
@@ -143,8 +181,8 @@ msgstr ""
 msgid "HasThemes"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:495
 #: include/widgets/verticle-mega-menu.php:439
+#: include/widgets/inline-mega-menu.php:495
 msgid "Hover"
 msgstr ""
 
@@ -209,6 +247,10 @@ msgstr ""
 msgid "http://hasthemes.com/"
 msgstr ""
 
+#: include/menu/templates.php:47 include/menu/templates.php:106
+msgid "Icon"
+msgstr ""
+
 #: include/admin/include/templates_list.php:77
 msgid "Import"
 msgstr ""
@@ -234,8 +276,9 @@ msgstr ""
 msgid "Inline Mega Menu"
 msgstr ""
 
-#: include/class.mega-menu.php:123 include/admin/include/admin-setting.php:539
+#: include/class.mega-menu.php:123
 #: include/admin/include/Recommended_Plugins.php:260
+#: include/admin/include/admin-setting.php:539
 msgid "Install Now"
 msgstr ""
 
@@ -243,37 +286,41 @@ msgstr ""
 msgid "Installing.."
 msgstr ""
 
+#: include/class.mega-menu.php:258
+msgid "Invalid menu item."
+msgstr ""
+
 #: include/widgets/inline-mega-menu.php:279
 msgid "Item Padding"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:165
 #: include/widgets/verticle-mega-menu.php:164
+#: include/widgets/inline-mega-menu.php:165
 msgid "Left"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:62
 #: include/widgets/verticle-mega-menu.php:61
+#: include/widgets/inline-mega-menu.php:62
 msgid "Main Menu"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:412
 #: include/widgets/verticle-mega-menu.php:368
+#: include/widgets/inline-mega-menu.php:412
 msgid "Main Menu Items"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:70
 #: include/widgets/verticle-mega-menu.php:69
+#: include/widgets/inline-mega-menu.php:70
 msgid "Main Menu Width"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:106
 #: include/widgets/verticle-mega-menu.php:105
+#: include/widgets/inline-mega-menu.php:106
 msgid "Margin"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:325
 #: include/widgets/verticle-mega-menu.php:281
+#: include/widgets/inline-mega-menu.php:325
 msgid "Mega Menu"
 msgstr ""
 
@@ -281,18 +328,18 @@ msgstr ""
 msgid "Mega Menu Background Color"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:332
 #: include/widgets/verticle-mega-menu.php:288
+#: include/widgets/inline-mega-menu.php:332
 #: include/admin/include/admin-setting.php:455
 msgid "Mega Menu Width"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:31
 #: include/widgets/verticle-mega-menu.php:30
+#: include/widgets/inline-mega-menu.php:31
 msgid "Menu"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:535
+#: include/menu/templates.php:128 include/admin/include/admin-setting.php:535
 #: include/admin/include/admin-setting.php:550
 msgid "Menu Badge"
 msgstr ""
@@ -325,17 +372,25 @@ msgstr ""
 msgid "Menu Items Color"
 msgstr ""
 
+#: include/menu/templates.php:78
+msgid "Menu Template"
+msgstr ""
+
 #: include/admin/include/admin-setting.php:529
 #: include/admin/include/admin-setting.php:544
 msgid "Menu Template Option"
+msgstr ""
+
+#: include/menu/templates.php:63
+msgid "Menu Width"
 msgstr ""
 
 #: include/admin/include/Recommended_Plugins.php:304
 msgid "More Details"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:423
 #: include/widgets/verticle-mega-menu.php:379
+#: include/widgets/inline-mega-menu.php:423
 msgid "Normal"
 msgstr ""
 
@@ -343,13 +398,13 @@ msgstr ""
 msgid "Online Documentation"
 msgstr ""
 
+#: include/widgets/verticle-mega-menu.php:117
+#: include/widgets/verticle-mega-menu.php:237
+#: include/widgets/verticle-mega-menu.php:324
 #: include/widgets/inline-mega-menu.php:118
 #: include/widgets/inline-mega-menu.php:238
 #: include/widgets/inline-mega-menu.php:368
 #: include/widgets/inline-mega-menu.php:480
-#: include/widgets/verticle-mega-menu.php:117
-#: include/widgets/verticle-mega-menu.php:237
-#: include/widgets/verticle-mega-menu.php:324
 msgid "Padding"
 msgstr ""
 
@@ -370,7 +425,7 @@ msgstr ""
 msgid "Plugin Successfully Activated"
 msgstr ""
 
-#: include/class.mega-menu.php:386
+#: include/class.mega-menu.php:423
 msgid "premium version"
 msgstr ""
 
@@ -383,7 +438,7 @@ msgstr ""
 msgid "Pro"
 msgstr ""
 
-#: include/class.mega-menu.php:386
+#: include/class.mega-menu.php:423
 msgid "Purchase our"
 msgstr ""
 
@@ -391,17 +446,21 @@ msgstr ""
 msgid "Recommendations"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:173
 #: include/widgets/verticle-mega-menu.php:172
+#: include/widgets/inline-mega-menu.php:173
 msgid "Right"
 msgstr ""
 
-#: include/class.mega-menu.php:203
+#: include/class.mega-menu.php:203 include/class.mega-menu.php:370
 msgid "Save"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:38
+#: include/class.mega-menu.php:371
+msgid "Saving…"
+msgstr ""
+
 #: include/widgets/verticle-mega-menu.php:37
+#: include/widgets/inline-mega-menu.php:38
 msgid "Select Menu"
 msgstr ""
 
@@ -409,7 +468,7 @@ msgstr ""
 msgid "Select Template"
 msgstr ""
 
-#: include/class.mega-menu.php:143
+#: include/class.mega-menu.php:143 include/menu/templates.php:40
 msgid "Settings"
 msgstr ""
 
@@ -417,8 +476,8 @@ msgstr ""
 msgid "Style"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:194
 #: include/widgets/verticle-mega-menu.php:193
+#: include/widgets/inline-mega-menu.php:194
 msgid "Sub Menu"
 msgstr ""
 
@@ -439,10 +498,18 @@ msgstr ""
 msgid "Sub Menu Position"
 msgstr ""
 
-#: include/widgets/inline-mega-menu.php:202
 #: include/widgets/verticle-mega-menu.php:201
+#: include/widgets/inline-mega-menu.php:202
 #: include/admin/include/admin-setting.php:423
 msgid "Sub Menu Width"
+msgstr ""
+
+#: include/menu/templates.php:68
+msgid "SubMenu Position"
+msgstr ""
+
+#: include/class.mega-menu.php:266
+msgid "Successfully data saved"
 msgstr ""
 
 #: include/admin/include/admin-setting.php:492
@@ -458,15 +525,15 @@ msgstr ""
 msgid "Templates Library"
 msgstr ""
 
+#: include/widgets/verticle-mega-menu.php:386
+#: include/widgets/verticle-mega-menu.php:446
 #: include/widgets/inline-mega-menu.php:291
 #: include/widgets/inline-mega-menu.php:430
 #: include/widgets/inline-mega-menu.php:502
-#: include/widgets/verticle-mega-menu.php:386
-#: include/widgets/verticle-mega-menu.php:446
 msgid "Text Color"
 msgstr ""
 
-#: include/class.mega-menu.php:386
+#: include/class.mega-menu.php:423
 msgid "to unlock these pro options!"
 msgstr ""
 
@@ -476,4 +543,8 @@ msgstr ""
 
 #: include/admin/include/admin-setting.php:507
 msgid "Video Tutorial"
+msgstr ""
+
+#: include/class.mega-menu.php:240
+msgid "You do not have permission to do this."
 msgstr ""

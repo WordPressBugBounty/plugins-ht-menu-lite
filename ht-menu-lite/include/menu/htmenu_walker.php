@@ -106,7 +106,7 @@ class HTmenu_Nav_Walker extends Walker_Nav_Menu {
         if( !empty( $item->ficoncolor ) ){
             $icon_style .= 'color:#'.$item->ficoncolor.';';
         }
-        $icon = '<i class="'.$icons.'" style="'.$icon_style.'"></i>';
+        $icon = '<i class="'.esc_attr( $icons ).'" style="'.esc_attr( $icon_style ).'"></i>';
     }
 
     if( isset( $item->template ) && !empty( $item->template ) ){
@@ -126,16 +126,16 @@ class HTmenu_Nav_Walker extends Walker_Nav_Menu {
                 $badge_style .= 'background-color:#'.$item->menutagbgcolor.';';
             }
         }
-        $badge = '<span class="htmenu-menu-tag" style="'.$badge_style.'">'.$item->menutag.'</span>';
+        $badge = '<span class="htmenu-menu-tag" style="'.esc_attr( $badge_style ).'">'.esc_html( $item->menutag ).'</span>';
     }
 
 
     if( isset( $item->menuposition ) && !empty( $item->menuposition ) ){
-        $styles .= 'left:'.$item->menuposition.'px;';
+        $styles .= 'left:'.intval( $item->menuposition ).'px;';
     }
 
     if( isset( $item->menuwidth ) && !empty( $item->menuwidth ) ){
-        $styles .= 'width:'.$item->menuwidth.'px;';
+        $styles .= 'width:'.absint( $item->menuwidth ).'px;';
     }
 
     // Build HTML output and pass through the proper filter.
@@ -152,7 +152,7 @@ class HTmenu_Nav_Walker extends Walker_Nav_Menu {
     );
 
     if( !empty( $buildercontent ) ){
-        $item_output .= sprintf('<div class="htmegamenu-content-wrapper sub-menu" style="%1s">%2s</div>', $styles, $buildercontent );
+        $item_output .= sprintf('<div class="htmegamenu-content-wrapper sub-menu" style="%1s">%2s</div>', esc_attr( $styles ), $buildercontent );
     }
 
     $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
