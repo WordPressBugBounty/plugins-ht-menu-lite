@@ -3,7 +3,7 @@ Contributors: hasthemes, htplugins, devitemsllc, zenaulislam, aslamhasib, madhus
 Tags: Mega menu, Elementor, Menu, Widget, Megamenu
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,12 @@ Needs assistance to use this plugin?
 Feel free to [Contact us](https://hasthemes.com/contact-us/)
 
 == Changelog ==
+
+= Version: 1.2.7 - Date: 2026-07-14 =
+* Security: Additional hardening for the XSS issue addressed in 1.2.6, reported by Artus KG.
+* Fixed: A few minor issues.
+* Tested: Compatibility with the latest version of WordPress.
+* Tested: Compatibility with the latest version of Elementor.
 
 = Version: 1.2.6 - Date: 2026-07-14 =
 * Security: Added capability check and input/output sanitization to the menu settings AJAX handler and menu render output, preventing a stored XSS reported by Artus KG.
