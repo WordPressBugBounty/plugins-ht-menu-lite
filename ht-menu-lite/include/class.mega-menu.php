@@ -325,6 +325,11 @@ class HTMega_Menu_Elementor {
         require_once ( HTMEGA_MENU_PL_PATH . 'include/helper-function.php' );
         require_once ( HTMEGA_MENU_PL_PATH . 'include/admin/admin-init.php' );
         require_once ( HTMEGA_MENU_PL_PATH . 'include/menu/htmenu_menu.php' );
+
+        if ( is_admin() ) {
+            require_once ( HTMEGA_MENU_PL_PATH . 'include/admin/class-api.php' );
+            require_once ( HTMEGA_MENU_PL_PATH . 'include/admin/class-dashboard-widget.php' );
+        }
     }
 
     // enqueue frontend scripts

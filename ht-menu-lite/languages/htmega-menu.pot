@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: HT Menu Lite – WordPress Mega Menu Builder for "
 "Elementor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-14 08:19+0000\n"
+"POT-Creation-Date: 2026-08-24 12:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.8.7; wp-7.0.1; php-8.4.18\n"
+"X-Loco-Version: 2.8.8; wp-7.1; php-8.4.18\n"
 "X-Domain: htmega-menu"
 
 #: include/admin/include/templates_list.php:59
@@ -35,15 +35,15 @@ msgstr ""
 msgid "(Pro)"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:547
+#: include/admin/include/admin-setting.php:352
 msgid "10 Menu Layouts"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:532
+#: include/admin/include/admin-setting.php:337
 msgid "5 Menu Layouts"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:254
+#: include/admin/include/Recommended_Plugins.php:265
 msgid "Activate"
 msgstr ""
 
@@ -51,12 +51,12 @@ msgstr ""
 msgid "Activate Now"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:138
-#: include/admin/include/Recommended_Plugins.php:265
+#: include/admin/include/Recommended_Plugins.php:141
+#: include/admin/include/Recommended_Plugins.php:276
 msgid "Activated"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:137
+#: include/admin/include/Recommended_Plugins.php:140
 msgid "Activating.."
 msgstr ""
 
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Alignment"
 msgstr ""
 
-#: include/class.mega-menu.php:372 include/menu/templates.php:194
+#: include/class.mega-menu.php:377 include/menu/templates.php:194
 msgid "All Data Saved"
 msgstr ""
 
@@ -87,6 +87,10 @@ msgstr ""
 
 #: include/menu/templates.php:50
 msgid "Badges"
+msgstr ""
+
+#: include/admin/views/dashboard-widget.php:91
+msgid "Blog"
 msgstr ""
 
 #: include/widgets/verticle-mega-menu.php:142
@@ -115,15 +119,15 @@ msgstr ""
 msgid "Buy HT Menu Pro Version"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:134
-#: include/admin/include/Recommended_Plugins.php:242
-#: include/admin/include/Recommended_Plugins.php:296
-#: include/admin/include/admin-setting.php:554
+#: include/admin/include/Recommended_Plugins.php:137
+#: include/admin/include/Recommended_Plugins.php:253
+#: include/admin/include/Recommended_Plugins.php:307
+#: include/admin/include/admin-setting.php:359
 #: include/admin/include/templates_list.php:73
 msgid "Buy Now"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:282
+#: include/admin/include/Recommended_Plugins.php:293
 msgid "By "
 msgstr ""
 
@@ -136,7 +140,7 @@ msgstr ""
 msgid "Color"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:517
+#: include/admin/include/admin-setting.php:322
 msgid "Contact Us"
 msgstr ""
 
@@ -152,6 +156,10 @@ msgstr ""
 msgid "Do not Saved Templates."
 msgstr ""
 
+#: include/admin/views/dashboard-widget.php:97
+msgid "Documentation"
+msgstr ""
+
 #: include/widgets/verticle-mega-menu.php:47
 #: include/widgets/inline-mega-menu.php:48
 msgid "Dropdown Icon"
@@ -161,11 +169,11 @@ msgstr ""
 msgid "Enable megamenu?"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:386
+#: include/admin/include/admin-setting.php:191
 msgid "General"
 msgstr ""
 
-#: include/class.mega-menu.php:418
+#: include/class.mega-menu.php:423
 msgid "Go Premium"
 msgstr ""
 
@@ -173,12 +181,16 @@ msgstr ""
 msgid "Go Pro"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:239
+#: include/admin/include/Recommended_Plugins.php:250
 msgid "HasTheme"
 msgstr ""
 
 #. Author of the plugin
 msgid "HasThemes"
+msgstr ""
+
+#: include/admin/class-dashboard-widget.php:27
+msgid "HasThemes Stories"
 msgstr ""
 
 #: include/widgets/verticle-mega-menu.php:439
@@ -215,11 +227,11 @@ msgid ""
 "this plugins."
 msgstr ""
 
-#: include/admin/include/admin-setting.php:527
+#: include/admin/include/admin-setting.php:332
 msgid "HT Menu Free"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:523
+#: include/admin/include/admin-setting.php:328
 msgid "HT Menu Free VS HT Menu Pro."
 msgstr ""
 
@@ -227,11 +239,11 @@ msgstr ""
 msgid "HT Menu Lite – WordPress Mega Menu Builder for Elementor"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:542
+#: include/admin/include/admin-setting.php:347
 msgid "HT Menu Pro"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:482
+#: include/admin/include/admin-setting.php:287
 msgid "HT Menu Settings"
 msgstr ""
 
@@ -267,8 +279,8 @@ msgstr ""
 msgid "Import to Page"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:530
-#: include/admin/include/admin-setting.php:545
+#: include/admin/include/admin-setting.php:335
+#: include/admin/include/admin-setting.php:350
 msgid "Individual Menu Width Control Option"
 msgstr ""
 
@@ -277,12 +289,12 @@ msgid "Inline Mega Menu"
 msgstr ""
 
 #: include/class.mega-menu.php:123
-#: include/admin/include/Recommended_Plugins.php:260
-#: include/admin/include/admin-setting.php:539
+#: include/admin/include/Recommended_Plugins.php:271
+#: include/admin/include/admin-setting.php:344
 msgid "Install Now"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:136
+#: include/admin/include/Recommended_Plugins.php:139
 msgid "Installing.."
 msgstr ""
 
@@ -324,13 +336,13 @@ msgstr ""
 msgid "Mega Menu"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:466
+#: include/admin/include/admin-setting.php:271
 msgid "Mega Menu Background Color"
 msgstr ""
 
 #: include/widgets/verticle-mega-menu.php:288
 #: include/widgets/inline-mega-menu.php:332
-#: include/admin/include/admin-setting.php:455
+#: include/admin/include/admin-setting.php:260
 msgid "Mega Menu Width"
 msgstr ""
 
@@ -339,36 +351,36 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: include/menu/templates.php:128 include/admin/include/admin-setting.php:535
-#: include/admin/include/admin-setting.php:550
+#: include/menu/templates.php:128 include/admin/include/admin-setting.php:340
+#: include/admin/include/admin-setting.php:355
 msgid "Menu Badge"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:537
-#: include/admin/include/admin-setting.php:552
+#: include/admin/include/admin-setting.php:342
+#: include/admin/include/admin-setting.php:357
 msgid "Menu Badge Background Color"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:536
-#: include/admin/include/admin-setting.php:551
+#: include/admin/include/admin-setting.php:341
+#: include/admin/include/admin-setting.php:356
 msgid "Menu Badge Color"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:416
+#: include/admin/include/admin-setting.php:221
 msgid "Menu Hover & Active Color"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:534
-#: include/admin/include/admin-setting.php:549
+#: include/admin/include/admin-setting.php:339
+#: include/admin/include/admin-setting.php:354
 msgid "Menu Icon Color"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:533
-#: include/admin/include/admin-setting.php:548
+#: include/admin/include/admin-setting.php:338
+#: include/admin/include/admin-setting.php:353
 msgid "Menu Icon Picker"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:409
+#: include/admin/include/admin-setting.php:214
 msgid "Menu Items Color"
 msgstr ""
 
@@ -376,8 +388,8 @@ msgstr ""
 msgid "Menu Template"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:529
-#: include/admin/include/admin-setting.php:544
+#: include/admin/include/admin-setting.php:334
+#: include/admin/include/admin-setting.php:349
 msgid "Menu Template Option"
 msgstr ""
 
@@ -385,7 +397,7 @@ msgstr ""
 msgid "Menu Width"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:304
+#: include/admin/include/Recommended_Plugins.php:315
 msgid "More Details"
 msgstr ""
 
@@ -394,7 +406,7 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:512
+#: include/admin/include/admin-setting.php:317
 msgid "Online Documentation"
 msgstr ""
 
@@ -417,19 +429,19 @@ msgstr ""
 msgid "Please deactivate HT Menu Lite before activating HT Menu."
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:407
+#: include/admin/include/Recommended_Plugins.php:456
 msgid "Plugin Not Found"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:427
+#: include/admin/include/Recommended_Plugins.php:476
 msgid "Plugin Successfully Activated"
 msgstr ""
 
-#: include/class.mega-menu.php:423
+#: include/class.mega-menu.php:428
 msgid "premium version"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:135
+#: include/admin/include/Recommended_Plugins.php:138
 #: include/admin/include/templates_list.php:80
 msgid "Preview"
 msgstr ""
@@ -438,11 +450,11 @@ msgstr ""
 msgid "Pro"
 msgstr ""
 
-#: include/class.mega-menu.php:423
+#: include/class.mega-menu.php:428
 msgid "Purchase our"
 msgstr ""
 
-#: include/admin/include/Recommended_Plugins.php:90
+#: include/admin/include/Recommended_Plugins.php:93
 msgid "Recommendations"
 msgstr ""
 
@@ -451,11 +463,11 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: include/class.mega-menu.php:203 include/class.mega-menu.php:370
+#: include/class.mega-menu.php:203 include/class.mega-menu.php:375
 msgid "Save"
 msgstr ""
 
-#: include/class.mega-menu.php:371
+#: include/class.mega-menu.php:376
 msgid "Saving…"
 msgstr ""
 
@@ -472,7 +484,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:391
+#: include/admin/include/admin-setting.php:196
 msgid "Style"
 msgstr ""
 
@@ -481,26 +493,26 @@ msgstr ""
 msgid "Sub Menu"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:434
+#: include/admin/include/admin-setting.php:239
 msgid "Sub Menu Background Color"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:441
+#: include/admin/include/admin-setting.php:246
 msgid "Sub Menu Items Color"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:448
+#: include/admin/include/admin-setting.php:253
 msgid "Sub Menu Items Hover Color"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:531
-#: include/admin/include/admin-setting.php:546
+#: include/admin/include/admin-setting.php:336
+#: include/admin/include/admin-setting.php:351
 msgid "Sub Menu Position"
 msgstr ""
 
 #: include/widgets/verticle-mega-menu.php:201
 #: include/widgets/inline-mega-menu.php:202
-#: include/admin/include/admin-setting.php:423
+#: include/admin/include/admin-setting.php:228
 msgid "Sub Menu Width"
 msgstr ""
 
@@ -512,8 +524,12 @@ msgstr ""
 msgid "Successfully data saved"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:492
+#: include/admin/include/admin-setting.php:297
 msgid "Successfully Settings Saved."
+msgstr ""
+
+#: include/admin/views/dashboard-widget.php:103
+msgid "Support"
 msgstr ""
 
 #: include/admin/include/template-library.php:149
@@ -533,7 +549,7 @@ msgstr ""
 msgid "Text Color"
 msgstr ""
 
-#: include/class.mega-menu.php:423
+#: include/class.mega-menu.php:428
 msgid "to unlock these pro options!"
 msgstr ""
 
@@ -541,7 +557,7 @@ msgstr ""
 msgid "Vertical Mega Menu"
 msgstr ""
 
-#: include/admin/include/admin-setting.php:507
+#: include/admin/include/admin-setting.php:312
 msgid "Video Tutorial"
 msgstr ""
 
