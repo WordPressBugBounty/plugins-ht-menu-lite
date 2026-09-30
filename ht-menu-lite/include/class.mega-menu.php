@@ -81,7 +81,11 @@ class HTMega_Menu_Elementor {
         add_filter('plugin_action_links_'.HTMEGA_MENU_PLUGIN_BASE, [ $this, 'plugins_setting_links' ] );
 
         // Add Plugin actions
-        add_action( 'elementor/widgets/widgets_registered', [ $this, 'init_widgets' ] );
+        if ( defined( 'ELEMENTOR_VERSION' ) && version_compare( ELEMENTOR_VERSION, '3.5.0', '>=' ) ) {
+            add_action( 'elementor/widgets/register', [ $this, 'init_widgets' ] );
+        } else {
+            add_action( 'elementor/widgets/widgets_registered', [ $this, 'init_widgets' ] );
+        }
 
         // Admin Scripts
         add_action('admin_enqueue_scripts', array( $this, 'htmega_megamenu_admin_scripts_method' ) );
@@ -276,7 +280,7 @@ class HTMega_Menu_Elementor {
             update_option( 'ht_menu_options_' . $menu_id, $settings );
             wp_die();
         }else{
-            $menu_item_id = absint( $_REQUEST['menu_item_id'] );
+            $menu_item_id = isset( $_REQUEST['menu_item_id'] ) ? absint( $_REQUEST['menu_item_id'] ) : 0;
 
             $menu_data = !empty( get_post_meta( $menu_item_id, 'htmega_menu_settings', true ) ) ? get_post_meta( $menu_item_id, 'htmega_menu_settings', true ) : '';
 
@@ -315,9 +319,16 @@ class HTMega_Menu_Elementor {
         } 
     }
 
-    public function init_widgets() {
+    public function init_widgets( $widgets_manager = null ) {
         require_once ( HTMEGA_MENU_PL_PATH.'include/widgets/inline-mega-menu.php' );
         require_once ( HTMEGA_MENU_PL_PATH.'include/widgets/verticle-mega-menu.php' );
+
+        if ( ! $widgets_manager ) {
+            $widgets_manager = \Elementor\Plugin::instance()->widgets_manager;
+        }
+        $method = method_exists( $widgets_manager, 'register' ) ? 'register' : 'register_widget_type';
+        $widgets_manager->$method( new \Elementor\HTMega_Menu_Inline_Menu() );
+        $widgets_manager->$method( new \Elementor\HTMega_Menu_Verticle_Menu() );
     }
 
     public function includes() {

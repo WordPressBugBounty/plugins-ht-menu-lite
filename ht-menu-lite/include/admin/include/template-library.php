@@ -24,7 +24,6 @@ class HTMegaMenu_Template_Library{
         if ( is_admin() ) {
             add_action( 'admin_menu', [ $this, 'admin_menu' ], 225 );
             add_action( 'wp_ajax_htmegamenu_ajax_request', [ $this, 'templates_ajax_request' ] );
-            add_action( 'wp_ajax_nopriv_htmegamenu_ajax_request', [ $this, 'templates_ajax_request' ] );
         }
         add_action( 'admin_enqueue_scripts', [ $this, 'scripts' ] );
 
@@ -104,6 +103,7 @@ class HTMegaMenu_Template_Library{
     public function scripts( $hook ) {
         if( 'ht-menu_page_htmegamenu_templates' == $hook ){
             // CSS
+            wp_enqueue_style( 'wp-jquery-ui-dialog' );
             wp_enqueue_style( 'htmenutemplates-stapel', HTMEGA_MENU_PL_URL . 'include/admin/assets/lib/css/stapel.css', false, HTMEGA_MENU_VERSION );
 
             wp_enqueue_script(
@@ -121,6 +121,7 @@ class HTMegaMenu_Template_Library{
                 [
                     'jquery',
                 ],
+                HTMEGA_MENU_VERSION,
                 true
             );
             
@@ -129,7 +130,9 @@ class HTMegaMenu_Template_Library{
                 HTMEGA_MENU_PL_URL . 'include/admin/assets/js/admin-ajax.js',
                 [
                     'jquery',
+                    'jquery-ui-dialog',
                 ],
+                HTMEGA_MENU_VERSION,
                 true
             );
         }
@@ -162,16 +165,20 @@ class HTMegaMenu_Template_Library{
 
         check_ajax_referer('htmenutemplates_import_nonce', 'nonce');
 
+        if ( ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( [ 'message' => esc_html__( 'You do not have permission to do this.', 'htmega-menu' ) ], 403 );
+        }
+
         if ( isset( $_REQUEST ) ) {
 
-            $template_id = $_REQUEST['httemplateid'];
-            $page_title = $_REQUEST['pagetitle'];
+            $template_id = isset( $_REQUEST['httemplateid'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['httemplateid'] ) ) : '';
+            $page_title = isset( $_REQUEST['pagetitle'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['pagetitle'] ) ) : '';
 
             $templateurl = sprintf( self::$templateapi, $template_id );
 
             $response_data = $this->templates_get_content_remote_request( $templateurl );
 
-            $defaulttitle = !empty( $response_data['title'] ) ? $response_data['title'] : __( 'New Template', 'woolentor' );
+            $defaulttitle = !empty( $response_data['title'] ) ? $response_data['title'] : __( 'New Template', 'htmega-menu' );
 
             $args = [
                 'post_type'    => !empty( $page_title ) ? 'page' : 'elementor_library',
@@ -193,7 +200,7 @@ class HTMegaMenu_Template_Library{
             echo json_encode(
                 array( 
                     'id' => $new_post_id,
-                    'edittxt' => esc_html__( 'Edit Template', 'woolentor' )
+                    'edittxt' => esc_html__( 'Edit Template', 'htmega-menu' )
                 )
             );
         }

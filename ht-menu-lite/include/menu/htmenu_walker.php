@@ -21,7 +21,14 @@ class HTmenu_Nav_Walker extends Walker_Nav_Menu {
         $indent = ( $depth > 0  ? str_repeat( "\t", $depth ) : '' ); // code indent
         $display_depth = ( $depth + 1 ); // because it counts the first submenu as 0
         if ($display_depth == 1) {
-         $style = 'style="'.esc_attr( 'width:'.absint( $this->htmenu_menuwidth ).'px; left:'.intval( $this->htmenu_menupos ).'px;' ).'"';
+         $inline_style = '';
+         if ( absint( $this->htmenu_menuwidth ) > 0 ) {
+           $inline_style .= 'width:'.absint( $this->htmenu_menuwidth ).'px;';
+         }
+         if ( '' !== (string) $this->htmenu_menupos ) {
+           $inline_style .= ' left:'.intval( $this->htmenu_menupos ).'px;';
+         }
+         $style = '' !== $inline_style ? 'style="'.esc_attr( trim( $inline_style ) ).'"' : '';
         }else{
           $style = '';
         }

@@ -578,5 +578,3 @@ class HTMega_Menu_Inline_Menu extends Widget_Base {
     }
 
 }
-
-Plugin::instance()->widgets_manager->register_widget_type( new HTMega_Menu_Inline_Menu() );
