@@ -3,7 +3,7 @@ Contributors: hasthemes, htplugins, devitemsllc, zenaulislam, aslamhasib, madhus
 Tags: Mega menu, Elementor, Menu, Widget, Megamenu
 Requires at least: 5.0
 Tested up to: 7.1
-Stable tag: 1.2.9
+Stable tag: 1.2.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,11 @@ Needs assistance to use this plugin?
 Feel free to [Contact us](https://hasthemes.com/contact-us/)
 
 == Changelog ==
+
+= Version: 1.2.10 - Date: 2026-10-29 =
+* Fixed: PHP 8 fatal error on the Templates Library page when the template data could not be loaded.
+* Tested: Compatibility with the latest version of WordPress.
+* Tested: Compatibility with the latest version of Elementor.
 
 = Version: 1.2.9 - Date: 2026-09-30 =
 * Security: Restricted the template import AJAX request to logged-in users with proper capability and sanitized its inputs.

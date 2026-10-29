@@ -31,7 +31,8 @@
                 <div class="htbanner-desc">
                     <h3><?php esc_html_e( 'HT Mega Menu Templates Library', 'htmega-menu' ); ?></h3>
                     <?php
-                        $alltemplates = sizeof( HTMegaMenu_Template_Library::instance()->get_templates_info()['templates'] ) ? sizeof( HTMegaMenu_Template_Library::instance()->get_templates_info()['templates'] ) : 0;
+                        $httemplates_info = HTMegaMenu_Template_Library::instance()->get_templates_info();
+                        $alltemplates     = ( is_array( $httemplates_info ) && ! empty( $httemplates_info['templates'] ) && is_array( $httemplates_info['templates'] ) ) ? count( $httemplates_info['templates'] ) : 0;
                     ?>
                     <p><?php esc_html_e( $alltemplates, 'htmega-menu' ); esc_html_e( ' Templates', 'htmega-menu' ); ?></p>
                 </div>
